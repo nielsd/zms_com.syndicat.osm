@@ -1,0 +1,14 @@
+<!-- osm_map_arker.standard_html -->
+
+<tal:block tal:define="
+		zmscontext options/zmscontext">
+ <div class="aler alert-success">
+  <h5>Map Marker</h5>
+  <div>
+    <strong><span tal:content="python:zmscontext.attr('map_marker_title')"></span></strong>
+  </div>
+  <div tal:content="python:zmscontext.attr('map_marker_text')"></div>
+ </div>
+</tal:block>
+
+<!-- /osm_map_arker.standard_html -->

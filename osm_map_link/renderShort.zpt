@@ -1,0 +1,14 @@
+<!-- renderShort -->
+<tal:block tal:define="zmscontext options/zmscontext;
+                map_id python:zmscontext.getId();
+		title python:zmscontext.getTitle(request);
+                map_height python:zmscontext.attr('map_height');
+                getLeafletMapScript python:zmscontext.attr('getLeafletMapScript')">
+
+<div class="alert alert-info">
+ <h4>Map:</h4>
+ <strong tal:content="structure title">the title</strong>
+</div>
+
+</tal:block>
+<!--/ renderShort -->

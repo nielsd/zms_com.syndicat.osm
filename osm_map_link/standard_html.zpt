@@ -1,0 +1,20 @@
+<!-- standard_html -->
+
+<tal:block tal:define="zmscontext options/zmscontext;
+                map_id python:zmscontext.getId();
+		title python:zmscontext.getTitle(request);
+                map_height python:zmscontext.attr('map_height');
+                getLeafletMapScript python:zmscontext.attr('getLeafletMapScript')">
+
+
+ <div class="osm_map"
+      tal:attributes="id python:'mymap_'+str(map_id);
+                      style python:'height:'+str(map_height)+'px'">map</div>
+
+ <script tal:content="structure python:getLeafletMapScript">
+ </script>
+
+
+</tal:block>
+
+<!--/ standard_html -->

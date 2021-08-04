@@ -1,0 +1,4 @@
+<div class="alert alert-info">
+ Get coordinates from OSM object finder at <a href="https://www.openstreetmap.org/" target="_new">openstreetmap.org</a>.<br />
+ Substitute "," with dot (".").
+</div>
