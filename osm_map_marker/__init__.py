@@ -28,7 +28,7 @@ class osm_map_marker:
 	package = "com.syndicat.osm"
 
 	# Revision
-	revision = "1.0.0"
+	revision = "2.0.1"
 
 	# Type
 	type = "ZMSObject"
